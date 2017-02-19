@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="content-language" content="en">	
+	<meta name="Language" content="en">
+
+	<title>Class AddressBook\Person | AddressBook Library v1.0</title>
+
+	<link rel="stylesheet" href="resources/style.css?156e1f7b7b33338aff331811a5808582bb99d288">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">	
+</head>
+
+<body>
+
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-AddressBook.html">
+						AddressBook					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AddressBook.AddressBook.html">AddressBook</a></li>
+				<li><a href="class-AddressBook.Group.html">Group</a></li>
+				<li class="active"><a href="class-AddressBook.Person.html">Person</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-AddressBook.html" title="Summary of AddressBook"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Person</h1>
+
+
+	<div class="description">
+	<p>Person Object</p>
+
+<p>Should only be instantiated by an AddressBook instance.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-AddressBook.AddressBook.html"><span>AddressBook\AddressBook</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>AddressBook\Person</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-AddressBook.html">AddressBook</a><br>
+		
+
+				<b>Usage:</b>
+				<pre><span class="php-var">$aBook</span> = <span class="php-keyword1">new</span> AddressBook();
+<span class="php-var">$luke</span> = <span class="php-var">$aBook</span>-&gt;addPerson(<span class="php-quote">&quot;Luke&quot;</span>,<span class="php-quote">&quot;Skywalker&quot;</span>);
+<span class="php-comment">// $luke is a `Person` instance.</span>
+<span class="php-var">$luke</span> = <span class="php-var">$aBook</span>-&gt;getPerson(<span class="php-quote">&quot;Luke&quot;</span>,<span class="php-quote">&quot;Skywalker&quot;</span>);</pre><br>
+			<b>Located at</b> <a href="source-class-AddressBook.Person.html#4-205" title="Go to source code">AddressBook/Person.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-AddressBook.Person.html#51-70" title="Go to source code">__construct</a>( <span><code><a href="class-AddressBook.AddressBook.html">AddressBook\AddressBook</a></code> <var>&amp; $parent</var></span>, <span>string <var>$first_name</var></span>, <span>string <var>$last_name</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Constructor of the person instance</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parent</var></dt>
+					<dd>$parent    The parent object reference</dd>
+					<dt><var>$first_name</var></dt>
+					<dd>First name of the new person</dd>
+					<dt><var>$last_name</var></dt>
+					<dd>Last name of the new person</dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-AddressBook.AddressBook.html#___construct">AddressBook\AddressBook::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFirstName" id="_getFirstName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFirstName">#</a>
+		<code><a href="source-class-AddressBook.Person.html#72-79" title="Go to source code">getFirstName</a>( )</code>
+
+
+		<div class="description detailed">
+			<p>Getter of the private first name member</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>First name of the person
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLastName" id="_getLastName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLastName">#</a>
+		<code><a href="source-class-AddressBook.Person.html#81-88" title="Go to source code">getLastName</a>( )</code>
+
+
+		<div class="description detailed">
+			<p>Getter of the private last name member</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>Last name of the person
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFullName" id="_getFullName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFullName">#</a>
+		<code><a href="source-class-AddressBook.Person.html#90-97" title="Go to source code">getFullName</a>( )</code>
+
+
+		<div class="description detailed">
+			<p>Gets the full name (first name + one space character + last name) of the user</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>Concatenated first and last name
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAddresses" id="_getAddresses">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAddresses">#</a>
+		<code><a href="source-class-AddressBook.Person.html#99-106" title="Go to source code">getAddresses</a>( )</code>
+
+
+		<div class="description detailed">
+			<p>Getter of the private addresses array</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>Address List of the person
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEmails" id="_getEmails">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEmails">#</a>
+		<code><a href="source-class-AddressBook.Person.html#108-115" title="Go to source code">getEmails</a>( )</code>
+
+
+		<div class="description detailed">
+			<p>Getter of the private emails array</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>Email list of the person
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPhoneNumbers" id="_getPhoneNumbers">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPhoneNumbers">#</a>
+		<code><a href="source-class-AddressBook.Person.html#117-124" title="Go to source code">getPhoneNumbers</a>( )</code>
+
+
+		<div class="description detailed">
+			<p>Getter of the private phone_numbers array</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>Phone numbers of the user
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addEmail" id="_addEmail">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addEmail">#</a>
+		<code><a href="source-class-AddressBook.Person.html#126-133" title="Go to source code">addEmail</a>( <span>string <var>$email</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Adds an email to the person</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$email</var></dt>
+					<dd>The person's email address</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addAddress" id="_addAddress">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addAddress">#</a>
+		<code><a href="source-class-AddressBook.Person.html#135-142" title="Go to source code">addAddress</a>( <span>string <var>$address</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Adds an address to the person</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$address</var></dt>
+					<dd>The person's address</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addPhoneNumbers" id="_addPhoneNumbers">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addPhoneNumbers">#</a>
+		<code><a href="source-class-AddressBook.Person.html#144-151" title="Go to source code">addPhoneNumbers</a>( <span>string <var>$number</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Adds a phone number to the person</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$number</var></dt>
+					<dd>The person's phone number</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="searchEmail" id="_searchEmail">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_searchEmail">#</a>
+		<code><a href="source-class-AddressBook.Person.html#153-163" title="Go to source code">searchEmail</a>( <span>string <var>$email</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Searches for the person's email adress if any email saved starts with the given string</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$email</var></dt>
+					<dd>String to be searched for</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>If person has an email starting with the given string, returns true, otherwise false.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addToGroup" id="_addToGroup">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addToGroup">#</a>
+		<code><a href="source-class-AddressBook.Person.html#165-177" title="Go to source code">addToGroup</a>( <span><code><a href="class-AddressBook.Group.html">AddressBook\Group</a></code> <var>$group</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Adds this person to a specific group</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$group</var></dt>
+					<dd>The group instance which this person will be added</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>true on success, otherwise false.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getGroups" id="_getGroups">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-AddressBook.Group.html">AddressBook\Group</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getGroups">#</a>
+		<code><a href="source-class-AddressBook.Person.html#179-189" title="Go to source code">getGroups</a>( )</code>
+
+
+		<div class="description detailed">
+			<p>Gets the group list which this person belongs to</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-AddressBook.Group.html">AddressBook\Group</a>[]</code><br>The group instance list of person groups
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__debugInfo" id="___debugInfo">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___debugInfo">#</a>
+		<code><a href="source-class-AddressBook.Person.html#191-204" title="Go to source code">__debugInfo</a>( )</code>
+
+
+		<div class="description detailed">
+			<p>Printout limiter when instance called with print_r or var_dump like debug methods.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>The output template to be shown within debug commands
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-AddressBook.AddressBook.html#methods">AddressBook\AddressBook</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-AddressBook.AddressBook.html#_addGroup">addGroup()</a>, 
+			<a href="class-AddressBook.AddressBook.html#_addPerson">addPerson()</a>, 
+			<a href="class-AddressBook.AddressBook.html#_getGroup">getGroup()</a>, 
+			<a href="class-AddressBook.AddressBook.html#_getPerson">getPerson()</a>, 
+			<a href="class-AddressBook.AddressBook.html#_searchPerson">searchPerson()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-AddressBook.AddressBook.html#properties">AddressBook\AddressBook</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-AddressBook.AddressBook.html#$id"><var>$id</var></a>, 
+			<a href="class-AddressBook.AddressBook.html#$person_group_relations"><var>$person_group_relations</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		AddressBook Library v1.0 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+</body>
+</html>

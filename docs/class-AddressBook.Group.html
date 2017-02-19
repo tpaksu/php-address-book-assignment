@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="content-language" content="en">	
+	<meta name="Language" content="en">
+
+	<title>Class AddressBook\Group | AddressBook Library v1.0</title>
+
+	<link rel="stylesheet" href="resources/style.css?156e1f7b7b33338aff331811a5808582bb99d288">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">	
+</head>
+
+<body>
+
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-AddressBook.html">
+						AddressBook					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AddressBook.AddressBook.html">AddressBook</a></li>
+				<li class="active"><a href="class-AddressBook.Group.html">Group</a></li>
+				<li><a href="class-AddressBook.Person.html">Person</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-AddressBook.html" title="Summary of AddressBook"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Group</h1>
+
+
+	<div class="description">
+	<p>Group Object</p>
+
+<p>Should only be instantiated by an AddressBook instance.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-AddressBook.AddressBook.html"><span>AddressBook\AddressBook</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>AddressBook\Group</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-AddressBook.html">AddressBook</a><br>
+		
+
+				<b>Usage:</b>
+				<pre><span class="php-var">$aBook</span> = <span class="php-keyword1">new</span> AddressBook();
+<span class="php-var">$jedi</span> = <span class="php-var">$aBook</span>-&gt;addGroup(<span class="php-quote">&quot;jedi&quot;</span>);
+<span class="php-comment">// $jedi is a `Group` instance.</span>
+<span class="php-var">$jedi</span> = <span class="php-var">$aBook</span>-&gt;getGroup(<span class="php-quote">&quot;jedi&quot;</span>);</pre><br>
+			<b>Located at</b> <a href="source-class-AddressBook.Group.html#4-93" title="Go to source code">AddressBook/Group.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-AddressBook.Group.html#25-38" title="Go to source code">__construct</a>( <span><code><a href="class-AddressBook.AddressBook.html">AddressBook\AddressBook</a></code> <var>&amp; $parent</var></span>, <span>string <var>$group_name</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Instance constructor with group name initializer parameter</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parent</var></dt>
+					<dd>$parent    Reference to it's creator, the AddressBook instance</dd>
+					<dt><var>$group_name</var></dt>
+					<dd>The given group name</dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-AddressBook.AddressBook.html#___construct">AddressBook\AddressBook::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setGroupName" id="_setGroupName">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setGroupName">#</a>
+		<code><a href="source-class-AddressBook.Group.html#40-47" title="Go to source code">setGroupName</a>( <span>string <var>$group_name</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Group name setter</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$group_name</var></dt>
+					<dd>The group's name to be changed to</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getGroupName" id="_getGroupName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getGroupName">#</a>
+		<code><a href="source-class-AddressBook.Group.html#49-56" title="Go to source code">getGroupName</a>( )</code>
+
+
+		<div class="description detailed">
+			<p>Group name getter</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The group's assigned name
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addMember" id="_addMember">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addMember">#</a>
+		<code><a href="source-class-AddressBook.Group.html#58-68" title="Go to source code">addMember</a>( <span><code><a href="class-AddressBook.Person.html">AddressBook\Person</a></code> <var>$person</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Adds a person instance to the group</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$person</var></dt>
+					<dd>The Person Object to be included within this group</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMembers" id="_getMembers">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-AddressBook.Person.html">AddressBook\Person</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMembers">#</a>
+		<code><a href="source-class-AddressBook.Group.html#70-80" title="Go to source code">getMembers</a>( )</code>
+
+
+		<div class="description detailed">
+			<p>Gets all the members which are in this group as Person instances array</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-AddressBook.Person.html">AddressBook\Person</a>[]</code><br>The Person instances which are members of this group
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__debugInfo" id="___debugInfo">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___debugInfo">#</a>
+		<code><a href="source-class-AddressBook.Group.html#82-92" title="Go to source code">__debugInfo</a>( )</code>
+
+
+		<div class="description detailed">
+			<p>Printout limiter when instance called with print_r or var_dump like debug methods.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>The output template to be shown within debug commands
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-AddressBook.AddressBook.html#methods">AddressBook\AddressBook</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-AddressBook.AddressBook.html#_addGroup">addGroup()</a>, 
+			<a href="class-AddressBook.AddressBook.html#_addPerson">addPerson()</a>, 
+			<a href="class-AddressBook.AddressBook.html#_getGroup">getGroup()</a>, 
+			<a href="class-AddressBook.AddressBook.html#_getPerson">getPerson()</a>, 
+			<a href="class-AddressBook.AddressBook.html#_searchPerson">searchPerson()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-AddressBook.AddressBook.html#properties">AddressBook\AddressBook</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-AddressBook.AddressBook.html#$id"><var>$id</var></a>, 
+			<a href="class-AddressBook.AddressBook.html#$person_group_relations"><var>$person_group_relations</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		AddressBook Library v1.0 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+</body>
+</html>

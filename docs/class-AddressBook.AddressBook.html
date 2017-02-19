@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="content-language" content="en">	
+	<meta name="Language" content="en">
+
+	<title>Class AddressBook\AddressBook | AddressBook Library v1.0</title>
+
+	<link rel="stylesheet" href="resources/style.css?156e1f7b7b33338aff331811a5808582bb99d288">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">	
+</head>
+
+<body>
+
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-AddressBook.html">
+						AddressBook					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-AddressBook.AddressBook.html">AddressBook</a></li>
+				<li><a href="class-AddressBook.Group.html">Group</a></li>
+				<li><a href="class-AddressBook.Person.html">Person</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-AddressBook.html" title="Summary of AddressBook"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+						<span>Deprecated</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class AddressBook</h1>
+
+
+	<div class="description">
+	<p>AddressBook Library</p>
+
+<p>This class is the main entry point of an Address Book instance. Any person or group is related or to be searched without this class.</p>
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-AddressBook.Group.html">AddressBook\Group</a>, 
+			<a href="class-AddressBook.Person.html">AddressBook\Person</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-AddressBook.html">AddressBook</a><br>
+		
+
+				<b>Usage:</b>
+				<pre><span class="php-var">$aBook</span> = <span class="php-keyword1">new</span> AddressBook();</pre>
+
+<p>or with namespaced version</p>
+
+<pre><span class="php-var">$aBook</span> = <span class="php-keyword1">new</span> AddressBook/AddressBook();</pre><br>
+			<b>Located at</b> <a href="source-class-AddressBook.AddressBook.html#4-200" title="Go to source code">AddressBook/AddressBook.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-AddressBook.AddressBook.html#37-47" title="Go to source code">__construct</a>( )</code>
+
+
+		<div class="description detailed">
+			<p>Constructor of AddressBook Class</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addPerson" id="_addPerson">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-AddressBook.Person.html">AddressBook\Person</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addPerson">#</a>
+		<code><a href="source-class-AddressBook.AddressBook.html#49-73" title="Go to source code">addPerson</a>( <span>string <var>$first_name</var></span>, <span>string <var>$last_name</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Adds a person to the address book and returns the created Person Object</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$first_name</var></dt>
+					<dd>The Person's first name</dd>
+					<dt><var>$last_name</var></dt>
+					<dd>The Person's last name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-AddressBook.Person.html">AddressBook\Person</a></code><br>The created Person Object
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception<br>when any of the inputs are empty
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>// create an address book<br />
+ $aBook  = new AddressBook();<br />
+ // add "darth vader" to the address book, and return the instance<br />
+ $dVader = $aBook->addPerson('darth','vader');<br />
+ // add "darth.vader@sith.com" to "darth vader"'s email list'<br />
+ $dVader->addEmail('darth.vader@sith.com');</p><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPerson" id="_getPerson">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-AddressBook.Person.html">AddressBook\Person</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPerson">#</a>
+		<code><a href="source-class-AddressBook.AddressBook.html#75-107" title="Go to source code">getPerson</a>( <span>string <var>$first_name</var></span>, <span>string <var>$last_name</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Searches for the exact match of name and surname and  the Person Object if it exists, or false if it doesn't</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$first_name</var></dt>
+					<dd>First name query</dd>
+					<dt><var>$last_name</var></dt>
+					<dd>Last name query</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-AddressBook.Person.html">AddressBook\Person</a></code><br>The related Person Object<br>
+					false<br>If nothing is found
+				</div>
+
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>// create an adress book <br>
+$aBook  = new AddressBook();<br />
+// add "darth vader" to the address book, and return the instance<br>
+$dVader = $aBook->addPerson('darth','vader');<br />
+// find and return the record in adressbook for the person whose first name is 'darth' and the last name is 'vader'<br>
+// returns the $dVader instance<br>
+$aBook->getPerson('darth','vader');<br>
+// find and return the record in addressbook for the person whose first name is 'darth' and the last name is ''<br>
+// returns false<br>
+$aBook->getPerson('darth','');</p><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="searchPerson" id="_searchPerson">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-AddressBook.Person.html">AddressBook\Person</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_searchPerson">#</a>
+		<code><a href="source-class-AddressBook.AddressBook.html#109-140" title="Go to source code">searchPerson</a>( <span>string <var>$first_name</var></span>, <span>string <var>$last_name</var></span>, <span>string <var>$email</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Finds a person with the first name, or with the last name, or with both, or with emails starting with/equal to given input</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$first_name</var></dt>
+					<dd>The name query</dd>
+					<dt><var>$last_name</var></dt>
+					<dd>The surname query</dd>
+					<dt><var>$email</var></dt>
+					<dd>Email query</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-AddressBook.Person.html">AddressBook\Person</a>[]</code><br>Array of Persons
+				</div>
+
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>// create an address book<br>
+$aBook  = new AddressBook();<br />
+// add 'darth vader' to the address book and return the added Person instance<br>
+$dVader = $aBook->addPerson('darth','vader');<br />
+// add this person an email address<br>
+$dVader->addEmail('darth.vader@sith.com')<br>
+// search for persons whose name is 'darth'<br>
+// returns $dVader<br>
+$aBook->searchPerson('darth','','');<br />
+// search for persons whose surname is 'vader'<br>
+// returns $dVader<br>
+$aBook->searchPerson('','vader','');<br />
+// search for persons whose have an email starting with 'darth.vader'
+// retuns $dVader<br>
+$aBook->searchPerson('','','darth.vader');<br></p><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addGroup" id="_addGroup">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-AddressBook.Group.html">AddressBook\Group</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addGroup">#</a>
+		<code><a href="source-class-AddressBook.AddressBook.html#142-173" title="Go to source code">addGroup</a>( <span>string <var>$name</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Adds a new group to the address book, and returns the created Group instance</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>The desired group name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-AddressBook.Group.html">AddressBook\Group</a></code><br>The created or found group
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception<br>when the user string is empty
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>// create an address book<br />
+$aBook  = new AddressBook();<br />
+// add a new group named 'jedi' to the address book, and return the group instance<br>
+$jedi = $aBook->addGroup('jedi');<br />
+// add a person to the address book<br>
+$obiWan = $aBook->addPerson('obi wan','kenobi');<br>
+// add this person to the group<br>
+$obiWan->addToGroup($jedi);<br>
+// or<br>
+$obiWan->addToGroup($aBook->getGroup("jedi"));<br>
+// or<br>
+$aBook->getPerson('obi wan','kenobi')->addToGroup($jedi);<br>
+// or<br>
+$aBook->getPerson('obi wan','kenobi')->addToGroup($aBook->getGroup("jedi"));<br></p><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getGroup" id="_getGroup">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-AddressBook.Group.html">AddressBook\Group</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getGroup">#</a>
+		<code><a href="source-class-AddressBook.AddressBook.html#175-199" title="Go to source code">getGroup</a>( <span>string <var>$name</var></span> )</code>
+
+
+		<div class="description detailed">
+			<p>Searchs for a single group and returns the found instance if it exists, or false if it doesn't</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd>The group name which should be returned</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-AddressBook.Group.html">AddressBook\Group</a></code><br>Group Object or boolean false
+				</div>
+
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>// create an address book<br />
+$aBook  = new AddressBook();<br />
+// add a new group named 'jedi' to the address book, and return the group instance<br>
+$jedi = $aBook->addGroup('jedi');<br />
+// get this group from address book<br>
+$found_jedi = $aBook->getGroup('jedi');<br> // $jedi
+// get another group from address book <br>
+$found_sith = $aBook->getGroup('sith');<br> // false</p><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="person_group_relations" id="$person_group_relations">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-AddressBook.AddressBook.html#27-31" title="Go to source code"><var>$person_group_relations</var></a>
+
+
+			<div class="description detailed">
+				<p>Relations array of Persons and Groups</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$person_group_relations" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="id" id="$id">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-AddressBook.AddressBook.html#32-36" title="Go to source code"><var>$id</var></a>
+
+
+			<div class="description detailed">
+				<p>Used for checking the child parent relation uniqueness</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$id" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		AddressBook Library v1.0 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+</body>
+</html>
