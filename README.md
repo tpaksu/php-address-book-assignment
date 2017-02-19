@@ -51,20 +51,17 @@ The returned `Group` instance has these methods:
 ## Features
 #### Adding A Person to the Address Book
 ```php
-use AddressBook;
-$aBook = new AddressBook;
+$aBook = new AddressBook\AddressBook;
 $aBook->addPerson("John","Doe");
 ```
 #### Adding A Group to the Address Book
 ```php
-use AddressBook;
-$aBook = new AddressBook;
+$aBook = new AddressBook\AddressBook;
 $aBook->addGroup("Work");
 ```
 #### Given a Group, Finding It's Members
 ```php
-use AddressBook;
-$aBook = new AddressBook;
+$aBook = new AddressBook\AddressBook;
 $work = $aBook->addGroup("Work");
 $aBook->addPerson("John","Doe")->addToGroup($work);
 $aBook->addPerson("Jane","Doe")->addToGroup($work);
@@ -74,8 +71,7 @@ $work_members = $work->getMembers();
 
 #### Given a Person, Finding It's Groups
 ```php
-use AddressBook;
-$aBook = new AddressBook;
+$aBook = new AddressBook\AddressBook;
 $john = $aBook->addPerson("John","Doe");
 $aBook->addGroup("Work")->addMember($john);
 $aBook->addGroup("Coders")->addMember($john);
@@ -85,8 +81,7 @@ $johns_groups = $john->getGroups();
 
 #### Find person by name (can supply either first name, last name, or both).
  ```php
-use AddressBook;
-$aBook = new AddressBook;
+$aBook = new AddressBook\AddressBook;
 $john = $aBook->addPerson("John","Doe");
 $john = $aBook->addPerson("Jane","Doe");
 $john = $aBook->addPerson("John","Does");
@@ -102,8 +97,7 @@ $search_4 = $aBook->searchPerson("June,"Doe","");
 ```
 #### Find person by start of the email address 
 ```php
-use AddressBook;
-$aBook = new AddressBook;
+$aBook = new AddressBook\AddressBook;
 $john = $aBook->addPerson("John","Doe");
 $john->addEmail("john.doe@missing.com");
 $john2 = $aBook->addPerson("John","Does");
@@ -132,5 +126,4 @@ instead of
 return strpos($email_address, $email) === 0;
 ```
 This will enable the lookup process to return `true` if the string also is a part of the e-mail address.
-
 
